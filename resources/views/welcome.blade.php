@@ -85,9 +85,7 @@
                         <table id="index" class="table table-hover table-condensed">
                             <thead>
                                 <tr>
-                                    <th>Manufacturer Code</th>
-                                    <th>Product Code</th>
-                                    <th>Product Full Code</th>
+                                    <th>OMRI ID</th>
                                     <th>Product Name</th>
                                     <th>Superclass</th>
                                     <th>Classification</th>
@@ -97,9 +95,7 @@
                             <tbody>
                                 @foreach($omri_list as $item)
                                 <tr>
-                                    <td>{!! $item->manufacturer_code !!}</td>
                                     <td>{!! $item->product_code !!}</td>
-                                    <td>{!! $item->product_full_code !!}</td>
                                     <td>{!! $item->product_name !!}</td>
                                     <td>{!! $item->superclass !!}</td>
                                     <td>{!! $item->classification !!}</td>
