@@ -71,7 +71,7 @@
         </style>
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="container-fluid" style="padding-right: 2rem">
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col-10">
