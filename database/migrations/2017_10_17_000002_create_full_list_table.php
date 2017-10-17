@@ -25,7 +25,7 @@ class CreateFullListTable extends Migration
             $table->engine = 'InnoDB';
             $table->text('date_last_published')->nullable()->default(null);
             $table->string('manufacturer_code', 45)->nullable()->default(null);
-            $table->string('product_code', 45)->nullable()->default(null);
+            $table->increments('product_code');
             $table->string('product_full_code', 45)->nullable()->default(null);
             $table->string('product_name')->nullable()->default(null);
             $table->string('status')->nullable()->default(null);
