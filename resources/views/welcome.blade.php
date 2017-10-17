@@ -71,7 +71,7 @@
         </style>
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid" style="padding: 1rem">
             <div class="row">
                 <div class="col-12">
                     <h1>OMRI Full List</h1>
