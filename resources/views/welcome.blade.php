@@ -71,11 +71,13 @@
         </style>
     </head>
     <body>
-        <div class="container-fluid" style="padding: 1rem">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
+                <div class="col-1"></div>
+                <div class="col-10">
                     <h1>OMRI Full List</h1>
                 </div>
+                <div class="col-1"></div>
             </div>
             <div class="row">
                <div class="col-1"></div>
