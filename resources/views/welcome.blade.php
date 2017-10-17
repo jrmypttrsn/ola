@@ -81,7 +81,7 @@
             </div>
             <div class="row">
                </div>
-               <div class="col"></div>
+               <div class="col-1"></div>
                 <div class="col-10">
                     <div class="table-responsive">
                         <table id="index" class="table table-hover table-condensed">
@@ -108,7 +108,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="col"></div>
+                <div class="col-1"></div>
                 </div>
             </div>
         </div>
