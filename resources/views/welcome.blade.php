@@ -91,6 +91,7 @@
                                     <th>Superclass</th>
                                     <th>Classification</th>
                                     <th>Category</th>
+                                    <th>Manufacturer Name</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -101,6 +102,7 @@
                                     <td>{!! $item->superclass !!}</td>
                                     <td>{!! $item->classification !!}</td>
                                     <td>{!! $item->category !!}</td>
+                                    <td>{!! $item->manufacturer_name !!}</td>
                                 </tr>
                                 @endforeach
                             </tbody>
