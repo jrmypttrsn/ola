@@ -1,5 +1,7 @@
 <?php
 
+$dbUrl = parse_url(env("CLEARDB_DATABASE_URL"));
+
 return [
 
     /*
@@ -41,15 +43,14 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', 'us-cdbr-iron-east-05.cleardb.net'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'heroku_0ca1f8bf9cfae4f'),
-            'username' => env('DB_USERNAME', 'b11b704c86256d'),
-            'password' => env('DB_PASSWORD', 'df269596'),
-            'unix_socket' => env('DB_SOCKET', ''),
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
+            'host' => isset($dbUrl["host"]) ? $dbUrl["host"] : env("DB_HOST"),
+            'port' => isset($dbUrl["port"]) ? $dbUrl["port"] : env("DB_PORT"),
+            'database' => isset($dbUrl["path"]) ? ltrim($dbUrl["path"], '/') : env("DB_DATABASE"),
+            'username' => isset($dbUrl["user"]) ? $dbUrl["user"] : env("DB_USERNAME"),
+            'password' => isset($dbUrl["pass"]) ? $dbUrl["pass"] : env("DB_PASSWORD"),
+            'charset' => 'utf8mb4’,
+            'collation' => 'utf8mb4_unicode_ci’,
+            'prefix' => '’,
             'strict' => true,
             'engine' => null,
         ],
