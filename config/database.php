@@ -46,7 +46,7 @@ return [
         $password = $url["pass"];
         $database = substr($url["path"], 1);
 
-        'mysql' => array(
+        'mysql' => [
             'driver'    => 'mysql',
             'host'      => $host,
             'database'  => $database,
@@ -55,7 +55,7 @@ return [
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
-        ),
+        ],
 
         // 'mysql' => [
         //     'driver' => 'mysql',
